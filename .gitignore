@@ -1,0 +1,17 @@
+# Ignore Python build artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Ignore Python virtual environments
+venv/
+*.venv
+venv.bak/
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore images
+*.eps
+*.png
