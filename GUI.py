@@ -4,7 +4,7 @@ import torchvision.transforms as transforms
 from PIL import Image, ImageOps
 from matplotlib import pyplot as plt
 import numpy as np
-
+from Classifier import DigitClassifier
 
 class GUI:
     def __init__(self):
@@ -49,6 +49,6 @@ class GUI:
         plt.show()
 
 if __name__ == "__main__":
-    model = Classifier.DigitClassifier()
+    model = DigitClassifier()
     model.load_state_dict(torch.load("Digit_classifier.pth"))
     GUI().main()
